@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/gasTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/textview_padding"
+        android:text="@string/price_of_gas"
+        android:textSize="@dimen/text_view_textsize" />
+
+    <TextView
+        android:id="@+id/gasPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/textview_padding"
+        android:paddingBottom="@dimen/textview_padding"
+        android:text=""
+        android:textSize="@dimen/text_view_textsize"/>
+
+    <SeekBar
+        android:id="@+id/gasSeekBar"
+        android:layout_width="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_height="@dimen/seekbar_height"
+        android:layout_gravity="fill_horizontal"
+        android:max="100"
+        android:progress="0"/>
+
+    <TextView
+        android:id="@+id/etanolTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/textview_padding"
+        android:text="@string/price_of_etanol"
+        android:textSize="@dimen/text_view_textsize"
+        android:layout_row="1"
+        android:layout_column="0" />
+
+    <TextView
+        android:id="@+id/etanolPriceTextView"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/textview_padding"
+        android:paddingBottom="@dimen/textview_padding"
+        android:text=""
+        android:textSize="@dimen/text_view_textsize" />
+
+    <SeekBar
+        android:id="@+id/etanolSeekBar"
+        android:layout_width="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_height="@dimen/seekbar_height"
+        android:layout_gravity="fill_horizontal"
+        android:max="100"
+        android:progress="0"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/resultTextInputEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:hint="@string/its_better_use"
+        android:padding="@dimen/textview_padding"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_row="2"
+        android:layout_column="0">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/resultTextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/resultImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/imageview_height"
+        android:layout_row="3"
+        android:layout_columnSpan="2"
+        app:srcCompat="@drawable/galao_gasolina"
+        android:layout_column="3" />
+
+
+</GridLayout>
